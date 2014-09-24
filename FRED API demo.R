@@ -8,10 +8,16 @@ if(!file.exists("FRED API")){
 }
 
 ## Setup a developer account and request API key at the Federal Reserve Bank of St. Louis (https://research.stlouisfed.org/).
-## The API key is used to access the FRED and ALFRED APIs.
+## The API key is used to access the FRED and ALFRED APIs. 
 
-fred.api.key <- "c6cbb1ba59c8a4c65436cd7407eb3844"
-fred.api.url <- "http://api.stlouisfed.org/fred/series/observations?series_id=PAYEMS&api_key=c6cbb1ba59c8a4c65436cd7407eb3844&file_type=json"
+fred.api.key <- "yourAPIkeyhere"
+
+## The main parameters of the API are the api_key, series_id, and file_type. For the purposes of this demonstration, we will be
+## looking at Total Nonfarm Payroll data that is released monthly by the Bureau of Labor Statistics. You can choose to GET your
+## data as either xml, json, txt, or xls files. This demonstration uses JSON data.
+
+fred.api.url <- "http://api.stlouisfed.org/fred/series/observations?series_id=PAYEMS&api_key=yourAPIkeyhere&file_type=json"
+
 
 my.app <- oauth_app("FRED Data", key = fred.api.key, secret = NULL)
 signature <- sign_oauth1.0(my.app, token = NULL, token_secret = NULL)
