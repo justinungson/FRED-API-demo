@@ -10,7 +10,7 @@ if(!file.exists("FRED API")){
 ## Setup a developer account and request API key at the Federal Reserve Bank of St. Louis (https://research.stlouisfed.org/).
 ## The API key is used to access the FRED and ALFRED APIs. 
 
-fred.api.key <- "c6cbb1ba59c8a4c65436cd7407eb3844"
+fred.api.key <- "yourAPIkeyhere"
 
 ## The main parameters of the API UFL are the api_key, series_id, and file_type. You can request your API key after registering 
 ## an account at the Federal Reserve Bank of St. Louis. You can choose to retrieve your data as either xml, json, txt, or xls 
