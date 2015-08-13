@@ -69,7 +69,7 @@ qplot(x    = dates,
       ylab = "Number of Persons",
       xlab = "") + theme(legend.position = "none")
 
-## Next, lets try to create a bevridge curve which is a graphical relationship between the job vacancy and uemployment rates.
+## Next, lets try to create a beveridge curve which is a graphical relationship between the job vacancy and uemployment rates.
 ## Some economists have used this curve to argue that US labor market has undergone a structural shift in the aftermath of the
 ## 2007-2009 recession. We will continue to use JSON data and the series ids for the data are JTSJOR and UNRATE, respectively.
 
